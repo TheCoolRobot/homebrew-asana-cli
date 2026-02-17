@@ -7,21 +7,29 @@ class AsanaCli < Formula
   on_macos do
     on_intel do
       url "https://github.com/TheCoolRobot/asana-cli/releases/download/v0.1.0/asana-cli-darwin-amd64"
-      sha256 "0c690e2ab102499b525a53872f4e4a7588412052e77ad350666da28c66c2adf8"
+      sha256 "92ed13dbc15521670900f00bac5cd036fc8429746667316d7e581fc3ceb0d9a2"
     end
     on_arm do
       url "https://github.com/TheCoolRobot/asana-cli/releases/download/v0.1.0/asana-cli-darwin-arm64"
-      sha256 "b8e1446475badc9278bac7b197604880cede5d9af99d8fef11999791dd249fe0"
+      sha256 "708261a038a0bb03677cdd44873356df8f835b11e863b6377a499a3d1f95f31a"
     end
   end
   
   on_linux do
     url "https://github.com/TheCoolRobot/asana-cli/releases/download/v0.1.0/asana-cli-linux-amd64"
-    sha256 "a8dbc5d5d12702a089c07e7d7e50f06957ce276efebc1555a14995ad6c1ba498"
+    sha256 "b5485a166605004e9df3727d2f717d1a1b6b01e6fd1593a2be362bdb90f1f0ea"
   end
   
   def install
-    bin.install "asana-cli-#{os}-#{arch}" => "asana-cli"
+    if OS.mac?
+      if Hardware::CPU.intel?
+        bin.install "asana-cli-darwin-amd64" => "asana-cli"
+      elsif Hardware::CPU.arm?
+        bin.install "asana-cli-darwin-arm64" => "asana-cli"
+      end
+    elsif OS.linux?
+      bin.install "asana-cli-linux-amd64" => "asana-cli"
+    end
   end
   
   def post_install
