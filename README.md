@@ -6,7 +6,7 @@ Homebrew tap for installing Asana CLI.
 
 ```bash
 brew install TheCoolRobot/asana-cli/asana-cli
-
+```
 ## Code
 
 Code is located at https://github.com/thecoolrobot/asana-cli
