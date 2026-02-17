@@ -7,17 +7,17 @@ class AsanaCli < Formula
   on_macos do
     on_intel do
       url "https://github.com/TheCoolRobot/asana-cli/releases/download/v0.1.0/asana-cli-darwin-amd64"
-      sha256 "92ed13dbc15521670900f00bac5cd036fc8429746667316d7e581fc3ceb0d9a2"
+      sha256 "1be99bf853e2185b1b65d2ba902a7aab439d9a86190df59a9911a7960d94bad4"
     end
     on_arm do
       url "https://github.com/TheCoolRobot/asana-cli/releases/download/v0.1.0/asana-cli-darwin-arm64"
-      sha256 "708261a038a0bb03677cdd44873356df8f835b11e863b6377a499a3d1f95f31a"
+      sha256 "7710d39831deb32aff09307b101cf6d57a92c3c107edfd20eb0ef03c33d5d55c"
     end
   end
   
   on_linux do
     url "https://github.com/TheCoolRobot/asana-cli/releases/download/v0.1.0/asana-cli-linux-amd64"
-    sha256 "b5485a166605004e9df3727d2f717d1a1b6b01e6fd1593a2be362bdb90f1f0ea"
+    sha256 "c8df366c5ce2d8e5a919b7a1990bf51ef260d86576058c077c2d3f6a375b3f71"
   end
   
   def install
