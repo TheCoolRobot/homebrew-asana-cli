@@ -2,22 +2,22 @@ class AsanaCli < Formula
   desc "Beautiful Asana CLI with TUI and sync daemon"
   homepage "https://github.com/TheCoolRobot/asana-cli"
   license "MIT"
-  version "v0.2.0"
+  version "v0.2.1"
   
   on_macos do
     on_intel do
-      url "https://github.com/TheCoolRobot/asana-cli/releases/download/v0.2.0/asana-cli-darwin-amd64"
-      sha256 "cc25152082777984a074c23ca241a037b828f9d76bdfa5b26f4e1a95b159a24c"
+      url "https://github.com/TheCoolRobot/asana-cli/releases/download/v0.2.1/asana-cli-darwin-amd64"
+      sha256 "19371c226602477afcd6288bb3a998c1c600ea649bfb87834444d4f0fde3898e"
     end
     on_arm do
-      url "https://github.com/TheCoolRobot/asana-cli/releases/download/v0.2.0/asana-cli-darwin-arm64"
-      sha256 "597dcfad46edd4bdea691502bd21cbef4ff11486bcd3614b1cc86a3afb009700"
+      url "https://github.com/TheCoolRobot/asana-cli/releases/download/v0.2.1/asana-cli-darwin-arm64"
+      sha256 "f29e260c9e22d33f683c60486410d4717eb776bef071de72c12a7c63b22e111e"
     end
   end
   
   on_linux do
-    url "https://github.com/TheCoolRobot/asana-cli/releases/download/v0.2.0/asana-cli-linux-amd64"
-    sha256 "9555864bc3d6beaa8c543f208ab24642a66d721cea7b2f2b23f523c8d0d5124a"
+    url "https://github.com/TheCoolRobot/asana-cli/releases/download/v0.2.1/asana-cli-linux-amd64"
+    sha256 "25e9edb4dd1b9384c08c9d34f95adba075fb266ffc147e4393498882f9b22355"
   end
   
   def install
